@@ -61,3 +61,9 @@ Add [] to create links for information
 sudo chmod 7 var
 Edit sub pages
 Save changes after answering the 2 question
+Upload files to github
+sudo apt install git
+sudo git commit
+sudo git add var
+sudo git pull origin master
+sudo git push origin master
