@@ -31,6 +31,39 @@ Uncomment the location ~ /\.ht block from line 68 to 70
 Exit midtest
 sudo nginx -t
 Successful
-Type sudo ln -s/etc/nginx/sites-available/midtest /etc/nginx/sites-enabled/
+Type sudo ln -s /etc/nginx/sites-available/midtest /etc/nginx/sites-enabled/
 Type sudo unlink /etc/nginx/sites-enabled/default
 Move the file midtest to /etc/nginx/sites-available/
+sudo mv midtest /etc/nginx/sites-available/
+sudo ln -s /etc/nginx/sites-available/midtest /etc/nginx/sites-enabled/
+cd /etc/nignx/sites-available/
+nano midtest
+Keep the PHP-CGI line commented
+Exit midtest
+sudo nginx -t
+Success
+sudo systemctl reload nginx
+cd /var/www/html/
+sudo nano info.php
+Open browser type localhost/info.php
+Delete the info file using sudo rm info.php
+cd .
+Type sudo wget unzip http://lionwiki.0o.cz/download/3.2.11/lionwiki-3.2.11.zip
+Type unzip lionwiki-3.2.11.zip
+Erase listen[::]80; from midtest
+sudo ngnix -t
+sudo systemctl reload nginx
+Open terminal in lionwiki-3.2.11 folder
+Move all the files to /var/www/html
+Open browser type localhost/index.php
+Edit main page
+Add [] to create links for information
+sudo chmod 7 var
+Edit sub pages
+Save changes after answering the 2 question
+Upload files to github
+sudo apt install git
+sudo git commit
+sudo git add var
+sudo git pull origin master
+sudo git push origin master
