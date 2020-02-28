@@ -67,3 +67,4 @@ sudo git commit
 sudo git add var
 sudo git pull origin master
 sudo git push origin master
+Upload DOCS.md
